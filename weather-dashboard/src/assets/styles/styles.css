@@ -1,5 +1,76 @@
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* Custom styles */
+body {
+  background-color: #1a1a2e;
+  color: #fff;
+}
 
+.dashboard {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-city {
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+}
+
+.profile-button {
+  padding: 10px 20px;
+  background-color: #4e4e50;
+  border: none;
+  border-radius: 8px;
+}
+
+.main-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.today-overview {
+  flex-basis: 30%;
+}
+
+.daily-forecast {
+  display: flex;
+  flex-basis: 70%;
+}
+
+.forecast-day {
+  text-align: center;
+  flex-grow: 1;
+}
+
+.details {
+  display: flex;
+  justify-content: space-around;
+}
+
+.detail {
+  text-align: center;
+  padding: 20px;
+  background-color: #33334d;
+  border-radius: 8px;
+}
+
+.map button {
+  width: 100%;
+  padding: 20px;
+  background-color: #16213e;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+}

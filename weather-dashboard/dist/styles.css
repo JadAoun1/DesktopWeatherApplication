@@ -501,78 +501,77 @@ video {
   --tw-contain-paint:  ;
   --tw-contain-style:  ;
 }
-.container {
+.block {
+  display: block;
+}
+
+/* Custom styles */
+body {
+  background-color: #1a1a2e;
+  color: #fff;
+}
+
+.dashboard {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-city {
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+}
+
+.profile-button {
+  padding: 10px 20px;
+  background-color: #4e4e50;
+  border: none;
+  border-radius: 8px;
+}
+
+.main-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.today-overview {
+  flex-basis: 30%;
+}
+
+.daily-forecast {
+  display: flex;
+  flex-basis: 70%;
+}
+
+.forecast-day {
+  text-align: center;
+  flex-grow: 1;
+}
+
+.details {
+  display: flex;
+  justify-content: space-around;
+}
+
+.detail {
+  text-align: center;
+  padding: 20px;
+  background-color: #33334d;
+  border-radius: 8px;
+}
+
+.map button {
   width: 100%;
+  padding: 20px;
+  background-color: #16213e;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
 }
-@media (min-width: 640px) {
-
-  .container {
-    max-width: 640px;
-  }
-}
-@media (min-width: 768px) {
-
-  .container {
-    max-width: 768px;
-  }
-}
-@media (min-width: 1024px) {
-
-  .container {
-    max-width: 1024px;
-  }
-}
-@media (min-width: 1280px) {
-
-  .container {
-    max-width: 1280px;
-  }
-}
-@media (min-width: 1536px) {
-
-  .container {
-    max-width: 1536px;
-  }
-}
-.mx-auto {
-  margin-left: auto;
-  margin-right: auto;
-}
-.mb-4 {
-  margin-bottom: 1rem;
-}
-.rounded {
-  border-radius: 0.25rem;
-}
-.bg-gray-100 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
-}
-.bg-white {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-.bg-blue-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(96 165 250 / var(--tw-bg-opacity));
-}
-.p-4 {
-  padding: 1rem;
-}
-.font-sans {
-  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-}
-.font-bold {
-  font-weight: 700;
-}
-.shadow {
-  --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
-  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
-
