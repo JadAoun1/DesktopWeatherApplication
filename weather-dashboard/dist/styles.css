@@ -505,73 +505,46 @@ video {
   display: block;
 }
 
-/* Custom styles */
+/* styles.css */
+
 body {
-  background-color: #1a1a2e;
-  color: #fff;
-}
-
-.dashboard {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-header {
+  font-family: Arial, sans-serif;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
 }
 
-.search-city {
+.container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+input {
   padding: 10px;
-  border: none;
-  border-radius: 8px;
+  width: 80%;
+  max-width: 300px;
+  margin-bottom: 10px;
 }
 
-.profile-button {
+button {
   padding: 10px 20px;
-  background-color: #4e4e50;
+  background-color: #007BFF;
+  color: white;
   border: none;
-  border-radius: 8px;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
-.main-info {
-  display: flex;
-  justify-content: space-between;
+button:hover {
+  background-color: #0056b3;
 }
 
-.today-overview {
-  flex-basis: 30%;
-}
-
-.daily-forecast {
-  display: flex;
-  flex-basis: 70%;
-}
-
-.forecast-day {
-  text-align: center;
-  flex-grow: 1;
-}
-
-.details {
-  display: flex;
-  justify-content: space-around;
-}
-
-.detail {
-  text-align: center;
-  padding: 20px;
-  background-color: #33334d;
-  border-radius: 8px;
-}
-
-.map button {
-  width: 100%;
-  padding: 20px;
-  background-color: #16213e;
-  color: #fff;
-  border: none;
-  border-radius: 8px;
+#weather-container {
+  margin-top: 20px;
 }
