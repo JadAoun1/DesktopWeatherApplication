@@ -1,0 +1,6 @@
+{
+    "server": {
+      "baseDir": "./src"
+    },
+    "files": ["./dist/styles.css", "./src/**/*.{html,htm,css,js}"]
+  }
