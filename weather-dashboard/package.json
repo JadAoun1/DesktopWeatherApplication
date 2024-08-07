@@ -4,10 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build:css": "postcss src/assets/styles/styles.css -o dist/styles.css",
+  "build:css": "postcss src/assets/styles/styles.css -o dist/styles.css",
   "watch:css": "postcss src/assets/styles/styles.css -o dist/styles.css --watch",
   "dev": "npm run watch:css"
-  },
+}
+,
   "keywords": [],
   "author": "",
   "license": "ISC",
