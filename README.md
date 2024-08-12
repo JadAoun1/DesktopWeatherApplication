@@ -11,7 +11,7 @@ cd path/to/cloned/repository
 For example:
 
 ```bash
-cd DesktopWeatherApplication-2/weather-dashboard
+cd weather-dashboard
 ```
 
 ### Step 2: Install Dependencies
