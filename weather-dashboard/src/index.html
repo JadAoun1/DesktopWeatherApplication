@@ -1,29 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/dist/styles.css">
-
-  <title>Weather Dashboard</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Weather Dashboard</title>
 </head>
-<body>
-  <div class="dashboard">
-    <header>
-      <input type="text" placeholder="Search City" id="city-input">
-      <button id="search-btn">Search</button>
-    </header>
-    <div class="main-info" id="weather-container">
-      <!-- Weather information will be displayed here -->
+<body class="bg-gray-900 text-white">
+    <div class="container mx-auto px-4 py-6">
+        <header class="bg-gray-700 p-4 rounded-lg flex justify-between items-center shadow-lg">
+            <div class="flex items-center space-x-4">
+                <input type="text" id="city-input" placeholder="Search City" class="bg-gray-600 focus:bg-gray-500 focus:ring-2 focus:ring-blue-500 rounded-full py-2 px-4 w-64 text-white placeholder-gray-300">
+                <button id="search-btn" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">Search</button>
+            </div>
+        </header>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-4">
+            <!-- Temperature Box -->
+            <div class="bg-gray-800 rounded-lg p-4 shadow-lg flex flex-col items-center justify-center">
+                <span class="font-medium text-sm text-gray-400">Temperature</span>
+                <h2 class="font-bold text-2xl" id="temp">16°C</h2>
+                <span class="text-gray-400 text-sm" id="feels-like">Feels like 15°C</span>
+            </div>
+            <!-- Wind Status Box -->
+            <div class="bg-gray-800 rounded-lg p-4 shadow-lg flex flex-col items-center justify-center">
+                <span class="font-medium text-sm text-gray-400">Wind Status</span>
+                <h2 class="font-bold text-2xl" id="wind-speed">7.5 km/h</h2>
+                <span class="text-gray-400 text-sm" id="wind-dir">NE</span>
+            </div>
+            <!-- Humidity Box -->
+            <div class="bg-gray-800 rounded-lg p-4 shadow-lg flex flex-col items-center justify-center">
+                <span class="font-medium text-sm text-gray-400">Humidity</span>
+                <h2 class="font-bold text-2xl" id="humidity">84%</h2>
+                <span class="text-gray-400 text-sm">Dew point 27°</span>
+            </div>
+            <!-- UV Index Box -->
+            <div class="bg-gray-800 rounded-lg p-4 shadow-lg flex flex-col items-center justify-center">
+                <span class="font-medium text-sm text-gray-400">UV Index</span>
+                <div class="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center">
+                    <span class="text-white font-bold text-lg" id="uv-index">5.5</span>
+                </div>
+            </div>
+        </div>
+        <div id="weather-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-4">
+            <!-- Additional Weather information will be displayed here -->
+        </div>
+        <div id="forecast-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 mt-4">
+            <!-- 5-day forecast will be inserted here -->
+        </div>
     </div>
-    <div class="daily-forecast" id="forecast-container">
-      <!-- 5-day forecast will be inserted here -->
-    </div>
-    <div class="details">
-      <!-- Additional weather details can be added here -->
-    </div>
-
-  </div>
-  <script src="../src/js/app.js"></script>
+    <script src="js/app.js"></script>
 </body>
 </html>
